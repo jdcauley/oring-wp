@@ -1,0 +1,390 @@
+/*!
+ * Roots 6.5.2
+ */
+
+@import "bootstrap/bootstrap.less";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+html{
+  height: 100%;
+}
+body{
+
+}
+
+
+/* HTML */
+
+ul{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+/* Variables */
+
+@icon-font-path: "../fonts/";
+
+@font-family-sans-serif: "Special Elite", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Large screen / wide desktop
+@container-lg-desktop: @container-desktop;
+
+@navbar-default-bg:                transparent;
+@navbar-default-toggle-border-color:       none;
+
+@white: #ffffff;
+@red: #D71F2D;
+@brand-primary: #5d89b3;
+@brand-secondary: #016E82;
+@brand-red: #B0302F;
+
+@body-bg:               @white;
+
+// @border-radius-base:             0;
+// @border-radius-large:            0;
+// @border-radius-small:            0;
+
+@headings-font-weight:    300;
+
+
+/* Mixins */
+.center{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.whitebg{
+  background-color: @white;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-shadow: 0px -3px 10px 2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow:    0px -3px 10px 2px rgba(0, 0, 0, 0.6);
+  box-shadow:         0px -3px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner { }
+
+.wish-nav{
+  position: relative;
+  margin-top: 30px;
+  font-family: 'Special Elite', Georgia;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-brand-img{
+  height: 45px;
+  width: auto;
+}
+.navbar-tagline{
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.oring-tabs{
+   position: absolute;
+   bottom: 7px;
+}
+.nav-tabs>li>a{
+  color: #000;
+  background-color: #F3E8CE;
+  vertical-align: bottom;
+  padding: 10px 20px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.brand-tab{
+  display: inline-block;
+  float: left;
+  padding: 10px 50px;
+  color: @white;
+  font-family: @font-family-sans-serif;
+  letter-spacing: 2px;
+  background: @brand-red;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  a{
+    display: block;
+    color: @white;
+  }
+  .oring-link{
+    font-size: 10px;
+  }
+}
+
+.nav>li>a{
+  -moz-box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.5);
+  box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.5);
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.nav-tabs>li>a:hover{
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.nav-tabs{
+  display: inline-block;
+  margin-bottom: -8px;
+}
+.nav>li>a:hover, .nav>li>a:focus{
+  background-color: #F3E8CE;
+}
+.nav-tabs>li>a:hover{
+  border-color: #F3E8CE;
+}
+.nav>.brand-tab>a{
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  color: #CA354C;
+  background-color: #F3E8CE;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.brand-tab.active>a, .nav-tabs>.brand-tab.active>a:hover, .nav-tabs>.brand-tab.active>a:focus, .nav-tabs>.brand-tab>a{
+  color: @white;
+  background-color: @red;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.inside-invert-tabs{
+  margin-bottom: 30px;
+  margin-top: 7px;
+}
+
+.invert-tabs{
+  display: none;
+  li{
+    display: inline;
+    height: 50px;
+    width: 100px;
+    a{
+      color: @white;
+      background-color: #00B3BB;
+      display: inline-block;
+      height: 40px;
+      width: 130px;
+      margin: -8px 1px auto;
+      padding-top: 10px;
+      text-align: center;
+      -webkit-border-bottom-right-radius: 15px;
+      -webkit-border-bottom-left-radius: 15px;
+      -moz-border-radius-bottomright: 15px;
+      -moz-border-radius-bottomleft: 15px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      &:hover{
+        text-decoration: none;
+        color: @white;
+        background-color: @red;
+      }
+    }
+    &.active{
+      a{
+        background-color: @red;
+      }
+    }
+  }
+}
+.section-about .invert-tabs{
+  display: block;
+}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+.folder{
+  min-height: 100%;
+  background-color: #F3E8CE;
+  padding-top: 30px;
+  -moz-box-shadow: 1px -1px 5px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 1px -1px 5px rgba(0,0,0,0.7);
+  box-shadow: 1px -1px 5px rgba(0,0,0,0.7);
+}
+.padded{
+  padding: 15px;
+}
+.padded-img{
+  padding: 20px;
+
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 80%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+
+.modal-body p { margin-bottom: 900px }
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+.page-header{
+  h1{
+    font-size: 20px;
+  }
+}
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .widget{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ul{
+    list-style: none;
+  }
+}
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+.post{
+  img{
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px
+  }
+}
+.page{
+  img{
+    max-width: 100%;
+  }
+}
+.page, .post{
+  text-align: justify;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+/* Footer */
+
+.content{
+  line-height: 1.7;
+}
+/* Styles not needed for production */
+.content{
+  img{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+}
+.about-img{
+  .pull-left;
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  display: block;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.sidebar-nav{
+  margin-top: 30px;
+  ul{
+    list-style: none;
+  }
+  a{
+    color: #000;
+    &.active{
+      color: @red;
+    }
+  }
+}
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; height: auto; width: 100%; padding: 15px;}
+.alignleft { float: left; padding-right: 15px; padding-bottom: 15px; padding-top: 15px;}
+.alignright { float: right; padding-left: 15px; padding-bottom: 15px; padding-top: 15px;}
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*  Media Queries
+    Extra small devices (phones, up to 480px) No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm) {
+  .padded-img{
+    min-height: 200px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+  .padded-img{
+    min-height: 300px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg) {
+  .padded-img{
+    min-height: 380px;
+  }
+}

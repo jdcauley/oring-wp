@@ -1,0 +1,38 @@
+[Oct 12, 2014 15:26:14 0-error] [] Connected to server but unexpected output: &lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;The page is temporarily unavailable&lt;/title&gt;
+&lt;style&gt;
+body { font-family: Tahoma, Verdana, Arial, sans-serif; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot;&gt;
+&lt;table width=&quot;100%&quot; height=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;
+The page you are looking for is temporarily unavailable.&lt;br/&gt;
+Please try again later.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+[Oct 12, 2014 15:31:26 0-error] [] Connected to server but unexpected output: &lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;The page is temporarily unavailable&lt;/title&gt;
+&lt;style&gt;
+body { font-family: Tahoma, Verdana, Arial, sans-serif; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot; text=&quot;black&quot;&gt;
+&lt;table width=&quot;100%&quot; height=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;
+The page you are looking for is temporarily unavailable.&lt;br/&gt;
+Please try again later.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
